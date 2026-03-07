@@ -6,7 +6,6 @@ import { z } from "zod";
 import { useUploadThing } from "@/utils/uploadthing";
 import { toast } from "sonner";
 import { extractPdfText, storePDFSummary } from "@/action/uploadAction";
-// import { generateSummary } from "@/lib/openAi";
 import { generateGeminiSummary } from "@/lib/gemini";
 import { useRouter } from "next/navigation";
 
@@ -85,12 +84,6 @@ const UploadForm = () => {
       if (!summary) {
         throw new Error("Both OpenAI and Gemini failed");
       }
-
-      // if (!summary) {
-      //   toast.loading("OpenAI rate-limited, trying Gemini…", { id: TOAST_ID });
-      //   summary = await generateGeminiSummary(pdfText);
-      //   if (!summary) throw new Error("Both OpenAI and Gemini failed");
-      // }
 
 
       toast.success("✨✨ Summary successfully generated", {

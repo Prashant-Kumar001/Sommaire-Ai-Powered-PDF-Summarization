@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
+    "@types/node": "^20.19.37",
     "@types/pdf-parse": "^1.1.5",
     "@types/pg": "^8.16.0",
     "@types/react": "^19",
