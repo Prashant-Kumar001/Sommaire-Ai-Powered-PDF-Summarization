@@ -1,0 +1,1 @@
+ALTER TABLE "pdf_summaries" ALTER COLUMN "user_id" SET DATA TYPE text;
