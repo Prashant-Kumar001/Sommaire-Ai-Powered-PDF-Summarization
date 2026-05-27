@@ -75,7 +75,6 @@ const UploadForm = () => {
       }
 
       const pdfText = extracted.data;
-      console.log('pdfText', pdfText)
 
       toast.loading("Summarising PDF…", { id: TOAST_ID });
 

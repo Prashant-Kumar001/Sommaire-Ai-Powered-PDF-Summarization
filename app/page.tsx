@@ -13,7 +13,7 @@ export default function HomePage() {
       <Hero />
       {/* <DemoSection /> */}
       <HowItWorks />
-      <HowItWorksSection />
+      {/* <HowItWorksSection /> */}
       {/* <Pricing /> */}
       {/* <PricingPage /> */}
       <CTA />
